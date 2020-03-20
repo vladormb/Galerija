@@ -1,0 +1,125 @@
+body {
+    background: #E1E1E1;
+}
+
+#wrapper { 
+    width: 960px;
+    margin: 0 auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 180px;
+    background: #6CA2D9;    
+}
+
+.gallery:hover {
+    border: 1px solid #777;
+}
+
+.text {
+    padding: 5px;
+    text-align: center;
+    background: white;
+}
+
+
+.gallery-wrap {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+
+.post {
+    padding: 5px;
+    margin: 0 auto;
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+    #wrapper { 
+        width: 700px;
+        margin: 0 auto;
+    }
+
+    .gallery-wrap {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between; 
+        flex-wrap: wrap;
+    }
+} 
+
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    #wrapper { 
+        width: 400px;        
+    }
+
+    .gallery-wrap {
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        float: left;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: block;
+        margin-right: 10px;
+    }    
+  }
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) { 
+    
+    #wrapper { 
+        width: 300px;        
+    }
+
+    .gallery-wrap {
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+} 
+
+
+@media (max-width: 319px) {
+  
+    #wrapper { 
+        width: 200px;        
+    }
+
+    .gallery-wrap {
+        margin-bottom: 20px;
+    }
+
+    .gallery {
+        float: none;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }    
+  }
+  
+
+
+  
+
+
+
+
